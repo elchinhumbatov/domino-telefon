@@ -1,10 +1,10 @@
 .App { text-align: center; }
 .header {
   background: rgb(44,51,51);
-  background: linear-gradient(180deg, rgba(44,51,51,1) 35%, rgba(0,0,0,1) 100%);
+  background: linear-gradient(180deg, rgba(44,51,51,1) 25%, rgba(0,0,0,1) 100%);
 }
 .footer {
-  min-height: 50vh;
+  min-height: 35vh;
   background: url('./bg.jpeg') center/cover no-repeat;
 }
 .h-content { padding: 20px; }
@@ -38,22 +38,25 @@ input {
   background-color: #A5C9CA;
   outline-color: #E7F6F2;
 }
-input[type=search]::-webkit-search-cancel-button {
-  -webkit-appearance: searchfield-cancel-button;
-}
+input[type="search"]::-webkit-search-decoration,
+/* input[type="search"]::-webkit-search-cancel-button, */
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
 .points {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
 .point {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 50px;
   height: 50px;
-  border-radius: 50%;
+  border-radius: 40%;
   margin: 10px;
   border: none;
   outline: none;
-  padding-top: 3px;
   background: #395B64;
   color: #E7F6F2;
   font-size: 1.5em;
