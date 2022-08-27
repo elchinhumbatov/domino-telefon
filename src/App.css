@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
+.App { text-align: center; }
+.header {
+  background: rgb(44,51,51);
+  background: linear-gradient(180deg, rgba(44,51,51,1) 35%, rgba(0,0,0,1) 100%);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.footer {
+  min-height: 50vh;
+  background: url('./bg.jpeg') center/cover no-repeat;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.h-content { padding: 20px; }
+h1 { color: #A5C9CA; }
+h3 { color: #A5C9CA; margin: 5px;}
+.columns { display: flex; justify-content: space-around; }
+.column {
+  width: 50px;
+  height: 50px;
+  margin: 7px;
+  padding-top: 7px;
+  color: #E7F6F2;
+  border-radius: 10px;
+  background: #395B64;
+  box-shadow:  20px 20px 60px #304d55,
+             -20px -20px 60px #426973;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.column span { font-size: 1.8em; font-weight: 900; }
+.h-body {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+input {
+  color: #395B64;
+  padding: 7px;
+  font-weight: 800;
+  width: 40vw;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  background-color: #A5C9CA;
+  outline-color: #E7F6F2;
+}
+input[type=search]::-webkit-search-cancel-button {
+  -webkit-appearance: searchfield-cancel-button;
+}
+.points {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.point {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 10px;
+  border: none;
+  outline: none;
+  padding-top: 3px;
+  background: #395B64;
+  color: #E7F6F2;
+  font-size: 1.5em;
+  font-weight: 800;
+  box-shadow:  20px 20px 60px #304d55,
+             -20px -20px 60px #426973;
 }
 
-.App-link {
-  color: #61dafb;
+.pulsate-fwd {
+	-webkit-animation: pulsate-fwd 0.5s ease-in-out 2 both;
+	        animation: pulsate-fwd 0.5s ease-in-out 2 both;
+}
+ @-webkit-keyframes pulsate-fwd {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes pulsate-fwd {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
