@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/domino-telefon/static/css/main.be85edc3.css",
+    "main.js": "/domino-telefon/static/js/main.6f916658.js",
+    "static/media/bg.jpeg": "/domino-telefon/static/media/bg.1009e3ec54ce7fa12680.jpeg",
+    "index.html": "/domino-telefon/index.html",
+    "main.be85edc3.css.map": "/domino-telefon/static/css/main.be85edc3.css.map",
+    "main.6f916658.js.map": "/domino-telefon/static/js/main.6f916658.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.be85edc3.css",
+    "static/js/main.6f916658.js"
+  ]
+}
